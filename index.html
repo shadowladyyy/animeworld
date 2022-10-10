@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="description" content="Mobile Menu with Vanilla JS">
+    <title>AnimeWorld</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+<header>
+    <section id="top">
+    <nav>
+        <img src="img/logo.png" alt="none">
+        <h3><a href="#">Logo</a></h3>
+        <ul>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#sub">Subscribe</a></li>
+            <li><a href="#content">Content</a></li>
+            <li><a href="#us">Contact</a></li>
+        </ul>
+    </nav>
+    </section>
+</header>
+<main>
+ <section id="about">
+    <h1>Welcome to the Cyberpunk anime world!</h1>
+    <p>More infos and tutorial after registration ---> <a href="#us" target="blank">Link</a></p>
+     <p> <h3> Do you want to receive our newsletter?</h3>   </p>
+     <button id="myBtn">Subscribe</button>
+ </section>
+    <div class="slider">
+        <div class="item">
+            <img src=" img/slide1.jpg" alt="первый слайд">
+            <div class="slideText"> Darling in the Franxx </div>
+        </div>
+    
+        <div class="item">
+            <img src="img/slide2.jpg" alt="2 слайд">
+            <div class="slideText"> Cyberpunk: Edgerunners </div>
+        </div>
+    
+        <div class="item">
+            <img src="img/slide3.jpg" alt="3 слайд">
+            <div class="slideText"> Psycho-Pass </div>
+        </div>
+    
+        <a class="prev" onclick="minusSlide()">&#10094;</a>
+        <a class="next" onclick="plusSlide()">&#10095;</a>
+    
+    </div>
+    
+    <div class=" slider - dots ">
+        <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+        <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+        <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+    </div>
+
+
+        <div class="lorem">
+            <h2>Lorem ipsum dolor sit amet </h2>
+            <h3> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium doloremque explicabo itaque
+            minima nostrum, pariatur sapiente sequi sint! Cupiditate doloremque mollitia natus recusandae velit
+            veritatis. Aliquam aperiam eaque hic voluptate? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Atque beatae cupiditate distinctio doloremque dolores est exercitationem harum id illo officia quam quasi
+                quis quo quos suscipit tenetur, voluptate voluptatem voluptates? </h3>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam doloremque eligendi eos ex
+            inventore magni necessitatibus nostrum officiis perferendis perspiciatis quia rerum, sunt voluptas voluptates?
+            Aperiam esse nam temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis corporis
+                deserunt praesentium quasi sint voluptas voluptate. At cumque dolore facilis natus porro quaerat vel.
+                Dolor enim exercitationem facere mollitia nisi!
+            </h3>
+
+            <h3> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum explicabo fugit maiores! Alias dicta, dolore
+            eveniet excepturi ipsum maiores nam nihil officia pariatur porro praesentium quasi quod repudiandae ullam unde?
+                Aperiam esse nam temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis corporis
+                deserunt praesentium quasi sint voluptas voluptate. At cumque dolore facilis natus porro quaerat vel.
+                Dolor enim exercitationem facere mollitia nisi!
+            </h3>
+            <h3> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto at autem commodi corporis culpa,
+            dolorem ducimus ea eum ex excepturi fugiat, fugit necessitatibus neque nisi odit, provident tempora totam.
+                Aperiam esse nam temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis corporis
+                deserunt praesentium quasi sint voluptas voluptate. At cumque dolore facilis natus porro quaerat vel.
+                Dolor enim exercitationem facere mollitia nisi!
+            </h3>
+            <h3>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi earum harum recusandae. Aliquam animi
+            atque culpa doloremque, doloribus ea exercitationem, illo inventore ipsa optio perspiciatis placeat ratione
+                Aperiam esse nam temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis corporis
+                deserunt praesentium quasi sint voluptas voluptate. At cumque dolore facilis natus porro quaerat vel.
+                Dolor enim exercitationem facere mollitia nisi!
+            repellat vero!
+           </h3>
+        </div>
+
+
+
+
+
+
+
+
+
+<section id="content">
+    <div class="flexslider carousel">
+        <ul class="slides">
+            <li>
+                <img src="img/keks1.jpg" />
+            </li>
+            <li>
+                <img src="img/keks2.jpg" />
+            </li>
+            <li>
+                <img src="img/keks3.jpg" />
+            </li>
+            <li>
+                <img src="img/keks4.jpg" />
+            </li>
+            <li>
+                <img src="img/keks5.jpg" />
+            </li>
+            <li>
+                <img src="img/keks6.jpg" />
+            </li>
+            <li>
+                <img src="img/keks7.jpg" />
+            </li>
+            <li>
+                <img src="img/keks8.jpg" />
+            </li>
+            <li>
+                <img src="img/keks2.jpg" />
+            </li>
+            <li>
+                <img src="img/keks3.jpg" />
+            </li>
+            <li>
+                <img src="img/keks1.jpg" />
+            </li>
+            <!-- items mirrored twice, total of 12 -->
+        </ul>
+    </div>
+</section>
+<section id="us">
+    <div class="contact">
+        <h2 class="line"> Contact us</h2>
+        <p>Write us a letter.</p>
+        <form id="contact-form">
+            <div class="row">
+                <div class="column-half">
+                    <input  type="text" id="user-name" name="user-name" class="form-input" placeholder="Your first name">
+                    <input type="text" id="user-subject" name="user-subject" class="form-input" placeholder="Your second name">
+                </div>
+
+                <div class="column-half">
+                    <input type="email" id="user-email"  name="user-email" class="form-input" placeholder="Your email">
+                    <input type="tel" id="user-phone"  name="user-phone" class="form-input" placeholder="Your phone">
+                </div>
+            </div>
+            <textarea name="user-message" id="user-message" rows="10" class="form-input" placeholder="Your message"></textarea>
+            <p>Your opinion is very important to us!</p>
+            <button type="submit" id="contact-btn" class="btn btn-dark">Send </button>
+        </form>
+
+    </div>
+</section>
+
+
+
+
+
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Do you want to receive our newsletter?</h2>
+            </div>
+
+            <div class="modal-body">
+                <img class= "art1" src="img/modal.jpg" alt="none">
+                <p>Then leave us your mail:</p>
+                <input type="email"  name="user-email" class="form-input" placeholder="Your email">
+
+            </div>
+              <div>
+                  <button type="submit"  class="btn btn-dark">Send </button>
+              </div>
+            <div class="modal-footer">
+                <h3>Thank you, it means a lot to us!</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 16px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: purple;
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1b0a40;
+        }
+    </style>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/script.js" defer></script>
+    <script>
+        $(window).load(function () {
+                $('.flexslider').flexslider({
+                    animation: "slide",
+                    animationLoop: false,
+                    itemWidth: 210,
+                    itemMargin: 5
+                });
+            });
+    </script>
+</main>
+<footer>
+    <div class="container">
+        <img width="70" alt="Logo" src="img/logo.png">
+        <p> Cyberpunk | 2022 | Made with love.</p>
+        <a href="#top" id="totop">&#9650;</a>
+    </div>
+</footer>
+</body>
+</html>
